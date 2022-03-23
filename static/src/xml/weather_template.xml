@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="weather_widget.weather_widget_popover_data">
+        <div class="d-flex flex-column bd-highlight mb-3">
+            <div class="d-flex justify-content-center">
+                <div class="mr-2 font-weight-bold"><t t-esc="city"/></div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="mr-2 font-weight-bold">Temperature:</div>
+                <div><t t-esc="popoverData.temp_C"/></div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="mr-2 font-weight-bold">Humidity:</div>
+                <div><t t-esc="popoverData.humidity"/></div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="mr-2 font-weight-bold">Pressure:</div>
+                <div><t t-esc="popoverData.pressure"/></div>
+            </div>
+        </div>
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col">Temperature</div>-->
+<!--                <div class="col"><t t-esc="popoverData.temp_C"/></div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--                <div class="col">Humidity</div>-->
+<!--                <div class="col"><t t-esc="popoverData.humidity"/></div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--                <div class="col">Pressure</div>-->
+<!--                <div class="col"><t t-esc="popoverData.pressure"/></div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </t>
+
+    <t t-name="weather_widget.weather_widget_popover_btn">
+        <a tabindex="0"
+           class="weather_widget_btn"
+           role="button"
+           data-toggle="popover">
+            <t t-esc="btnText"/>
+        </a>
+    </t>
+
+    <t t-name="weather_widget.weather_widget">
+       <div class="weather_widget_block mx-2"/>
+    </t>
+
+</templates>
